@@ -1,0 +1,10 @@
+packages:
+  - "server"
+  - "dashboard"
+  - "simulator"
+  - "shared"
+
+allowBuilds:
+  esbuild: true
+
+injectWorkspacePackages: true
