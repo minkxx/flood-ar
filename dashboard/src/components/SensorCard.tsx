@@ -5,6 +5,7 @@ interface SensorCardProps {
 }
 
 const STATUS_LABEL: Record<ProcessedReading['alertLevel'], string> = {
+   unknown: 'No data',
    normal: 'Normal',
    warn: 'Flood warning',
    alert: 'Flood alert',
