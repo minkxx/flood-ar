@@ -15,7 +15,10 @@ function isSensorReading(value: unknown): value is SensorReading {
    const candidate = value as Record<string, unknown>;
    return (
       typeof candidate.nodeId === 'string' &&
+      typeof candidate.localityId === 'string' &&
       typeof candidate.waterLevelCm === 'number' &&
+      typeof candidate.lat === 'number' &&
+      typeof candidate.lng === 'number' &&
       typeof candidate.timestamp === 'string'
    );
 }
