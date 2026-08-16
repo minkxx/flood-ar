@@ -20,10 +20,56 @@ h1 {
    font-size: 14px;
 }
 
+.locality-rows {
+   display: flex;
+   flex-direction: column;
+   gap: 28px;
+   margin-top: 28px;
+}
+
 .grid {
    display: flex;
    gap: 16px;
    flex-wrap: wrap;
+}
+
+.section-title {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 15px;
+   margin: 0 0 12px;
+   color: #333;
+}
+
+.locality-badge {
+   font-size: 11px;
+   font-weight: 600;
+   padding: 3px 9px;
+   border-radius: 999px;
+   background: #eee;
+   color: #555;
+}
+
+.locality-badge-normal {
+   background: #e3f7ef;
+   color: #0f6e56;
+}
+.locality-badge-warn {
+   background: #fdf1dc;
+   color: #a3701e;
+}
+.locality-badge-alert {
+   background: #fbe4e4;
+   color: #a32d2d;
+}
+.locality-badge-unknown {
+   background: #eee;
+   color: #6b7280;
+}
+
+.value-pending {
+   color: #bbb;
 }
 
 .card {
@@ -41,6 +87,10 @@ h1 {
 
 .card-alert {
    border-left-color: #e24b4a;
+}
+
+.card-unknown {
+   border-left-color: #9ca3af;
 }
 
 .card h2 {
@@ -74,6 +124,10 @@ h1 {
 
 .status-alert {
    color: #a32d2d;
+}
+
+.status-unknown {
+   color: #6b7280;
 }
 
 .ts {
